@@ -1,4 +1,4 @@
-import userName from '../src/cli.js';
-import readlineSync from 'readline-sync';
+#!/usr/bin/env node
 import game1 from '../src/even-brain.js';
+
 game1();
