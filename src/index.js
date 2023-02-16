@@ -19,6 +19,6 @@ const gameLogic = (rounds, description) => {
       return
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!!`);
 };
 export default gameLogic;

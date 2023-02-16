@@ -12,11 +12,11 @@ const game1 = () => {
       i += 1;
     } else if (ranNum % 2 === 0 && tryGame !== 'yes') {
       console.log(`${tryGame} is wrong answer ;(. Correct answer was 'yes'.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     } else if (ranNum % 2 !== 0 && tryGame !== 'no') {
       console.log(`${tryGame} is wrong answer ;(. Correct answer was 'no'.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
