@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import userName from './cli.js';
+import userName from '../cli.js';
 
 console.log(`Hello, ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
