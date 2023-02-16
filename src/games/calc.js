@@ -9,26 +9,26 @@ const ranOp = () => {
   return operators[randOperatorIndex];
 };
 
-const action = (op1, op2, operation) => {
-  switch (operation) {
-    case '+':
-      return op1 + op2;
+const action = (op1, op2, operation) => { switch (operation) {
+    case '+': 
+        return op1 + op2;
     case '*':
-      return op1 * op2;
+        return op1 * op2;
     case '-':
-      return op1 - op2;
+        return op1 - op2;
     default:
-      return Error;
-  }
-};
+        return Error;
+    }
+}
+
 const actions = () => {
-  const op1 = ranNum(0, 100);
-  const op2 = ranNum(0, 100);
-  const operation = ranOp();
-  const question = `${op1} ${operation} ${op2}`;
-  const answer = String(action(op1, op2, operation));
-  return [question, answer];
-};
+    const op1 = ranNum(0, 100);
+    const op2 = ranNum(0, 100);
+    const operation = ranOp();
+    const question = `${op1} ${operation} ${op2}`;
+    const answer = String(action(op1, op2, operation));
+    return [question, answer];
+}
 const gamecalc = () => {
   const rounds = [];
   for (let i = 0; i < roundsNum; i += 1) {
