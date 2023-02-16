@@ -12,7 +12,7 @@ const gameprogression = () => {
         progression.push(start + step * i)
     }
     let answer = String(progression.splice(ranNum(1, length), 1, '..'))
-    const question = String(progression.join(', ')
+    const question = String(progression.join(', '))
     return [question,answer]
 }
  const progressiongame = () => {
