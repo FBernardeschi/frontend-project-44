@@ -4,23 +4,21 @@ import gameLogic, { roundsNum } from '../index.js'
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const prime = (n) => {
-    if (n===1)  {
-        return false;
-      }
-      else if(n === 2)  {
-        return true;
-      } else   {
-        for(var x = 2; x < n; x+=1)  {
-          if(n % x === 0) {
+    if (n > 1) {
+        for (let i = 2; i < n; i++) {
+          if (n % i == 0) {
             return false;
           }
         }
-        return true;  
+        return true;
+      } else {
+        return false 
       }
     }
+    
 
 const game = () => {
-    const question = ranNum(0,100)
+    const question = ranNum(0,10)
     const answer = prime(question) === true ? 'yes' : 'no';
     return [question,answer]
 }
